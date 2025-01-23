@@ -6,6 +6,11 @@ url: https://just-the-docs.github.io
 logo: "assets/images/cerdito.webp"
 favicon_ico: "/assets/images/cerdito.webp"
 
-
+search_enabled: true
+previews: 5
+preview_words_before: 10
+nav_enabled: true
+heading_anchors: true
+color_scheme: dark
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
