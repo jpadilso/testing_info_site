@@ -2,15 +2,16 @@
 title: Home
 layout: home
 ---
+New release
+{: .label .label-purple }
+
 Welcome to the testing-info site.
 
 This site is a collection of articles about software testing.
 
-{Testing label: .label .label-yellow }
 
 
-New release
-{: .label .label-purple }
+
 
 {: .note }
 A paragraph

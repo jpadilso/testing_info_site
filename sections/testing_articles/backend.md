@@ -11,17 +11,10 @@ nav_order: 2
     Table of contents
   </summary>
   {: .text-delta }
-1. TOC
+- TOC
 {:toc}
 </details>
 
-
-## Table of Contents
-- [GET Requests](#get-requests)
-- [POST Requests](#post-requests)
-- [PUT Requests](#put-requests)
-- [DELETE Requests](#delete-requests)
-- [Test Checklist](#test-checklist)
 
 ## GET Requests
 
