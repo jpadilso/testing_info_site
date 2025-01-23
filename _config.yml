@@ -1,5 +1,5 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Testing info site
+description: Where is Pingu?
 theme: just-the-docs
 
 url: https://just-the-docs.github.io
@@ -14,3 +14,6 @@ heading_anchors: true
 color_scheme: dark
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
+
+back_to_top: true
+back_to_top_text: "Parriba"

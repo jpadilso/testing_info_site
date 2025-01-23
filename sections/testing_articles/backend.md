@@ -1,10 +1,20 @@
 ---
 title: Backend Testing
 layout: default
-nav_enabled: true
+nav_order: 2
 ---
 
 # Common Tests for REST APIs
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 
 ## Table of Contents
 - [GET Requests](#get-requests)
