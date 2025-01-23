@@ -1,4 +1,8 @@
 ---
+title: Introduction to testing
+layout: default
+nav_enabled: true
+------
 title: "Introduction"
 date: 2025-01-20
 ---
