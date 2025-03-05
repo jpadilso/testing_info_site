@@ -277,3 +277,49 @@ assert response.status_code == 404
 - Resource not deleted 
 - Improper error messages
 - Resource still available
+
+
+
+---
+Testing checklist for REST APIs
+
+URI validation
+Keys from body
+    Schema validation
+Error Handling
+Status code
+Mandatory elements
+    Header key
+    Body keys
+    Params
+Authentication
+Response time
+Database validation
+Response validation
+    Pagination
+    Specific Key-value validations
+    Logic validations
+Interoperatibility tests
+
+---
+Principales códigos de estado HTTP
+
+✅ Respuestas exitosas (2xx)
+
+    200 OK → Todo salió bien y el servidor devuelve la respuesta esperada.
+    201 Created → Se creó un nuevo recurso correctamente.
+    204 No Content → La petición fue exitosa, pero no hay contenido en la respuesta (por ejemplo, después de un DELETE).
+
+⚠️ Errores del cliente (4xx)
+
+    400 Bad Request → La petición está mal formada o tiene datos incorrectos.
+    401 Unauthorized → Falta autenticación (por ejemplo, no se envió un token válido).
+    403 Forbidden → Tienes autenticación, pero no permisos para acceder a ese recurso.
+    404 Not Found → El recurso solicitado no existe.
+
+🚨 Errores del servidor (5xx)
+
+    500 Internal Server Error → Algo falló en el servidor.
+    502 Bad Gateway → El servidor recibió una respuesta inválida de otro servidor.
+    503 Service Unavailable → El servidor está temporalmente fuera de servicio.
+---
