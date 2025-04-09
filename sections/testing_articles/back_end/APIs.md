@@ -15,15 +15,16 @@ nav_order: 2
 {:toc}
 </details>
 
-
 ## GET Requests
 
 **GET requests** are used to retrieve data from a server. Common tests include:
 
 ### 1. **Schema Validation**
+
 Ensures the response matches the expected JSON schema.
 
 **Example:**
+
 ```python
 import jsonschema
 from jsonschema import validate
@@ -48,9 +49,11 @@ validate(instance=response, schema=schema)
 ```
 
 ### 2. **Pagination**
+
 Verifies correct handling of pagination.
 
 **Example:**
+
 ```python
 import requests
 
@@ -63,9 +66,11 @@ assert "prev" in data["links"]
 ```
 
 ### 3. **Data Integrity**
+
 Ensures the data returned is accurate and consistent.
 
 **Example:**
+
 ```python
 import requests
 
@@ -81,9 +86,11 @@ assert data["name"] == "Item 1"
 **POST requests** are used to create new resources. Common tests include:
 
 ### 1. **Schema Validation**
+
 Ensures the response matches the expected JSON schema.
 
 **Example:**
+
 ```python
 import jsonschema
 from jsonschema import validate
@@ -108,9 +115,11 @@ validate(instance=response, schema=schema)
 ```
 
 ### 2. **Error Handling**
+
 Checks that the API returns appropriate error messages and status codes for invalid requests.
 
 **Example:**
+
 ```python
 import requests
 
@@ -120,9 +129,11 @@ assert response.json()["error"] == "Invalid request data"
 ```
 
 ### 3. **Authentication and Authorization**
+
 Ensures that the API endpoints are protected and only accessible to authorized users.
 
 **Example:**
+
 ```python
 import requests
 
@@ -140,11 +151,13 @@ assert response.status_code == 401
 **PUT requests** are used to update existing resources. Common tests include:
 
 ### 1. **Schema Validation**
+
 Ensures the response matches the expected JSON schema.
 
 **Example:**
 
 >!
+
 ```python
 import jsonschema
 from jsonschema import validate
@@ -169,9 +182,11 @@ validate(instance=response, schema=schema)
 ```
 
 ### 2. **Data Integrity**
+
 Ensures the data returned is accurate and consistent after the update.
 
 **Example:**
+
 ```python
 import requests
 
@@ -183,9 +198,11 @@ assert data["name"] == "Updated Item"
 ```
 
 ### 3. **Error Handling**
+
 Checks that the API returns appropriate error messages and status codes for invalid update requests.
 
 **Example:**
+
 ```python
 import requests
 
@@ -199,9 +216,11 @@ assert response.json()["error"] == "Invalid request data"
 **DELETE requests** are used to delete resources. Common tests include:
 
 ### 1. **Successful Deletion**
+
 Ensures the resource is successfully deleted.
 
 **Example:**
+
 ```python
 import requests
 
@@ -210,9 +229,11 @@ assert response.status_code == 204
 ```
 
 ### 2. **Error Handling**
+
 Checks that the API returns appropriate error messages and status codes for invalid delete requests.
 
 **Example:**
+
 ```python
 import requests
 
@@ -222,9 +243,11 @@ assert response.json()["error"] == "Resource not found"
 ```
 
 ### 3. **Data Integrity**
+
 Ensures the resource is no longer available after deletion.
 
 **Example:**
+
 ```python
 import requests
 
@@ -236,49 +259,55 @@ assert response.status_code == 404
 ## Test Checklist
 
 ### GET Requests
+
 - Schema Validation
 - Pagination
 - Data Integrity
 
-#### Common Defects:
+#### Common Defects
+
 - Incorrect data format
 - Missing or extra fields
 - Incorrect pagination links
 - Inconsistent data
 
 ### POST Requests
+
 - Schema Validation
 - Error Handling
 - Authentication and Authorization
 
-#### Common Defects:
+#### Common Defects
+
 - Incorrect data format
 - Missing or extra fields
 - Incorrect pagination links
 - Unauthorized access
 
 ### PUT Requests
+
 - Schema Validation
 - Data Integrity
 - Error Handling
 
-#### Common Defects:
+#### Common Defects
+
 - Incorrect data format
 - Missing or extra fields
 - Improper error messages
 - Data not updated correctly
 
 ### DELETE Requests
+
 - Successful Deletion
 - Error handling
 - Data integrity
 
-#### Common Defects:
-- Resource not deleted 
+#### Common Defects
+
+- Resource not deleted
 - Improper error messages
 - Resource still available
-
-
 
 ---
 Testing checklist for REST APIs
