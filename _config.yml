@@ -6,14 +6,27 @@ url: https://just-the-docs.github.io
 logo: "assets/images/cerdito.webp"
 favicon_ico: "/assets/images/cerdito.webp"
 
+# Search settings
 search_enabled: true
 previews: 5
 preview_words_before: 10
+
+# Navigation settings
 nav_enabled: true
 heading_anchors: true
+
+# Style settings
 color_scheme: dark
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
 
+# Nav link, back to top as footer
 back_to_top: true
-back_to_top_text: "Parriba"
+back_to_top_text: "Back to top"
+
+# Mermaid diagrams available
+mermaid:
+  version: "9.1.3"
+
+# Code snippets, copy available
+enable_copy_code_button: true
